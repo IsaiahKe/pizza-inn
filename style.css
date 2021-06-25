@@ -11,6 +11,33 @@ body{
 .sidenav{
  background-color: aliceblue !important; min-width: fit-content !important;
 }
+.pholder{
+    height:350px !important;min-width:300px !important;background-color: #f0f0f0 !important; box-shadow: aliceblue; margin: 15px 10px auto;max-width:23% !important;/* margin-top: 10px !important;margin-bottom: 10px !important;*/
+}
+hr{
+    margin:0px !important; width: 100% !important;
+}
+.centerpos{
+    text-align: center;border: 2px solid red !important;border-radius: 50%;width:160px;height:160px;background-image: url("logo.png");background-repeat: none;background-size:cover; margin: 0px auto;
+}
+.centerbody{
+    display: flex;justify-content: space-between !important;align-items: flex-start !important;flex-grow: initial;flex-direction: row;flex-wrap: wrap;
+}
+.sidenav ol{
+    list-style-type: none;
+}
+.sidenav ol li{
+    margin-top: 10px !important;
+}
+.imageholder{
+    width:70%;height:200px;background-color: aliceblue; margin: 0px auto;
+}
+.btn-w{
+width:40% !important; text-align: center !important;margin:0px auto !important;
+}
+.min-width{
+    min-width: fit-content !important;
+}
 .alignend{
     display: flex;align-items: flex-end;justify-content: flex-end;flex-direction: row;padding-right:40px;
 }
