@@ -1,4 +1,6 @@
-var order = [];
+$(document).ready(
+    function(){
+    var order = [];
 function Pizza(price, size, crust, top) {
     this.pizzaPrice = price;
     this.pizzaSize = size;
@@ -45,31 +47,35 @@ var allPizza = [pizza1, pizza2, pizza3, pizza4, pizza5, pizza6, pizza7, pizza8, 
 let result = [];
 
 
-function getPizzaSize(type){
-    for(let i=0;i<allPizza.length;i++){
-        if(allPizza[i].pizzaSize==type){
+function getPizzaSize(type) {
+    result=[];
+    for (let i = 0; i < allPizza.length; i++) {
         
+        if (allPizza[i].pizzaSize == type){
+
             result.push(allPizza[i]);
         }
     }
- }
- getPizza(type);
- console.log(result);
- function getPizzaCrust(crust){
-    let result=[];
-     for(let i=0;i<ar.length;i++){
-         if(allPizza[i].pizzaCrust==crust){
+}
+function getPizzaTop(type) {
+    result=[];
+    for (let i = 0; i < allPizza.length; i++) {
         
-             result.push(allPizza[i]);
-         }
-     }
- }
- function getPizzaTop(top){
-    let result=[];
-     for(let i=0;i<allPizza.length;i++){
-         if(allPizza[i].pizzaTop==top){
+        if (allPizza[i].pizzaSize == type){
+
+            result.push(allPizza[i]);
+        }
+    }
+}
+function getPizzaCrust(type) {
+    result=[];
+    for (let i = 0; i < allPizza.length; i++) {
         
-             result.push(allPizza[i]);
-         }
-     }
- }
+        if (allPizza[i].pizzaSize == type){
+
+            result.push(allPizza[i]);
+        }
+    }
+}
+    });
+    
