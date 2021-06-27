@@ -45,3 +45,35 @@ var allPizza = [pizza1, pizza2, pizza3, pizza4, pizza5, pizza6, pizza7, pizza8, 
 let result = [];
 
 
+function getPizza(ar,type){
+    for(let i=0;i<ar.length;i++){
+        if(ar[i].pizzaSize==type){
+        
+            result.push(allPizza[i]);
+        }
+    }
+}
+function getPizza(ar,crust){
+    for(let i=0;i<ar.length;i++){
+        if(ar[i].pizzaSize==crust){
+        
+            resultSmall.push(allPizza[i]);
+        }
+    }
+}
+function getPizza(ar,top){
+    for(let i=0;i<ar.length;i++){
+        if(ar[i].pizzaSize==top){
+        
+            resultSmall.push(allPizza[i]);
+        }
+    }
+}
+function getXlarge(ar){
+    for(let i=0;i<ar.length;i++){
+        if(ar[i].pizzaSize=="xlarge"){
+        
+            resultSmall.push(allPizza[i]);
+        }
+    }
+}
