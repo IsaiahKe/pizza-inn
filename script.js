@@ -45,35 +45,31 @@ var allPizza = [pizza1, pizza2, pizza3, pizza4, pizza5, pizza6, pizza7, pizza8, 
 let result = [];
 
 
-function getPizza(ar,type){
-    for(let i=0;i<ar.length;i++){
-        if(ar[i].pizzaSize==type){
+function getPizzaSize(type){
+    for(let i=0;i<allPizza.length;i++){
+        if(allPizza[i].pizzaSize==type){
         
             result.push(allPizza[i]);
         }
     }
-}
-function getPizza(ar,crust){
-    for(let i=0;i<ar.length;i++){
-        if(ar[i].pizzaSize==crust){
+ }
+ getPizza(type);
+ console.log(result);
+ function getPizzaCrust(crust){
+    let result=[];
+     for(let i=0;i<ar.length;i++){
+         if(allPizza[i].pizzaCrust==crust){
         
-            resultSmall.push(allPizza[i]);
-        }
-    }
-}
-function getPizza(ar,top){
-    for(let i=0;i<ar.length;i++){
-        if(ar[i].pizzaSize==top){
+             result.push(allPizza[i]);
+         }
+     }
+ }
+ function getPizzaTop(top){
+    let result=[];
+     for(let i=0;i<allPizza.length;i++){
+         if(allPizza[i].pizzaTop==top){
         
-            resultSmall.push(allPizza[i]);
-        }
-    }
-}
-function getXlarge(ar){
-    for(let i=0;i<ar.length;i++){
-        if(ar[i].pizzaSize=="xlarge"){
-        
-            resultSmall.push(allPizza[i]);
-        }
-    }
-}
+             result.push(allPizza[i]);
+         }
+     }
+ }
