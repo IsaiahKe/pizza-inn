@@ -34,8 +34,7 @@
                    <li> <div class="btn">
                          <input type="text"placeholder="Item search">
                     </div></li>
-                    <li><div class="btn nameholder">
-                        Cart
+                    <li><div class="btn nameholder cart" id="cart">
                     </div></li>
                    <li> <div class="btn btn-primary">
                         Offers
@@ -49,54 +48,45 @@
 <body>
     <div class="container-fluid">
 
-        <div class="row">
-            <hr>
-            <div class="col-1 sidenav">
-                <h4>Size</h4>
-                <ol>
-                    <div class="nameholder" id="small">
-                        <li>Small</li>
-                    </div>
-                    <div class="nameholder" id="medium" >
-                        <li>Medium</li>
-                    </div>
-                    <div class="nameholder" id="large">
-                        <li>Large</li>
-                    </div>
-                </ol>
-                <hr>
-                <h4>Crust</h4>
-
-                <ol>
-                    <div class="nameholder" id="cripsy">
-                        <li>Crispy</li>
-                    </div>
-                    <div class="nameholder" id="stuff">
-                        <li>Stuffed</li>
-                    </div>
-                  
-                    <div class="nameholder" id="flatbread">
-                        <li>FlatBread</li>
-                    </div>
-                </ol>
-                <hr>
-                <h4>Topping</h4>
-                <ol>
-                    <div class="nameholder" id="pepperoni">
-                        <li>Pepperoni</li>
-                    </div>
-                    <div class="nameholder" id="mushroom">
-                        <li>Mushroom</li>
-                    </div>
-                    <div class="nameholder" id="cheese">
-                        <li>Cheese</li>
-                    </div>
-                </ol>
-            </div>
-            <div class="col-11 centerbody" id="itemholder">
-                
-
-            </div>
+        <div class=" card orderCard">
+            <div class="card-head">Customize Your Pizza order</div>
+            <form onsubmit="">
+                <p>Select Size:</p><p>
+            <select name="" id="">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select></p>
+        <p>Select Top</p>
+        <p>
+            <select name="" id="">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </p>
+        <p>Select Crust</p>
+        <p>
+        <select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        </p>
+        <p><Address></Address></p>
+        <p>
+            <select name="" id="">
+                <option value="">None</option>
+                <option value="">CBD</option>
+                <option value="">Yaya</option>
+                <option value="">Muthaiga</option>
+                <option value="">Westalands</option>
+                <option value="">Ngong</option>
+            </select>
+        </p>
+        <p><input type="submit" value="Order"></p>
+            </form>
+    
         </div>
     </div>
 </body>
