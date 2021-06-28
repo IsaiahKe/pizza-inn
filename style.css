@@ -39,9 +39,14 @@ width:40% !important; text-align: center !important;margin:0px auto !important;
     min-width: fit-content !important;
 }
 .alignend{
-    display: flex;align-items: flex-end;justify-content: flex-end;flex-direction: row;padding-right:40px;
-}
+    display: flex;align-items: flex-end;justify-content: flex-end;flex-direction: row;padding-right:40px;min-width:60% !important;}
 .nav ol{
     list-style-type: none; float: left;
 }
-
+.nav ol li{
+    float: left !important;display: flex !important;flex-direction: row !important;margin: 0px 10px !important 
+}
+.nameholder{
+    height:40px;width:80%;background-color: transparent; cursor: pointer; line-height: 40px; padding-left:10px;
+}
+input[type="text"]{height:40px;width:80%;border-radius:25px;outline: none; padding-left: 10px;}
