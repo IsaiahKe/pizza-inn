@@ -9,7 +9,6 @@
     <!--offline bootstrap-->
     <link rel="stylesheet" href="bootstrap.min.css">
     <script src="jquery.js"></script>
-    <script src="jquery-ui.js"></script>
     <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,25 +17,31 @@
     <nav>
 
         <div class="container-fluid nav">
-                <div class="col-2 min-width">
-                    <div class="rounded-circle centerpos">
-                    </div>
+            <div class="col-2 min-width">
+                <div class="rounded-circle centerpos">
                 </div>
-                <div class="col-3">
-                    <div class="row min-width">
-                        <h1>IZZIE PIZZA PALACE</h1>
-                    </div>
-                    <div class="row min-width">
-                        <h3>Enjoy Every Bite</h3>
-                    </div>
+            </div>
+            <div class="col-2">
+                <div class="row min-width">
+                    <h1>IZZIE PIZZA PALACE</h1>
                 </div>
-                <div class="col-7 alignend">
-                    <ol>
-                        <div class="btn btn-search"><li> Search</li></div>
-                        <div class="btn btn-primary"><li>Cart</li></div>
-                        <div class="btn btn-primary"><li>Offers</li></div>
-                    </ol>
+                <div class="row min-width">
+                    <h3>Enjoy Every Bite</h3>
                 </div>
+            </div>
+            <div class="col-8 alignend">
+                <ol>
+                   <li> <div class="btn">
+                         <input type="text"placeholder="Item search">
+                    </div></li>
+                    <li><div class="btn nameholder">
+                        Cart
+                    </div></li>
+                   <li> <div class="btn btn-primary">
+                        Offers
+                    </div></li>
+                </ol>
+            </div>
         </div>
     </nav>
 </head>
@@ -49,160 +54,47 @@
             <div class="col-1 sidenav">
                 <h4>Size</h4>
                 <ol>
-                    <div class="">
+                    <div class="nameholder" id="small">
                         <li>Small</li>
                     </div>
-                    <div class="">
+                    <div class="nameholder" id="medium" >
                         <li>Medium</li>
                     </div>
-                    <div class="">
+                    <div class="nameholder" id="large">
                         <li>Large</li>
-                    </div>
-                    <div class="">
-                        <li>X-large</li>
                     </div>
                 </ol>
                 <hr>
                 <h4>Crust</h4>
 
                 <ol>
-                    <div class="">
-                        <li>Crispy,</li>
+                    <div class="nameholder" id="cripsy">
+                        <li>Crispy</li>
                     </div>
-                    <div class="">
+                    <div class="nameholder" id="stuff">
                         <li>Stuffed</li>
                     </div>
-                    <div class="">
-                        <li>Gluten-free</li>
-                    </div>
-                    <div class="">
-                        <li>Neapolitan</li>
-                    </div>
-                    <div class="">
+                  
+                    <div class="nameholder" id="flatbread">
                         <li>FlatBread</li>
                     </div>
                 </ol>
                 <hr>
                 <h4>Topping</h4>
                 <ol>
-                    <div class="">
+                    <div class="nameholder" id="pepperoni">
                         <li>Pepperoni</li>
-                        <div class="">
-                            <li>Mushroom</li>
-                            <div class="">
-                                <li>Extra cheese</li>
-                                <div class="">
-                                    <li>Sausage</li>
-                                    <div class="">
-                                        <li>Onion.</li>
-
-
+                    </div>
+                    <div class="nameholder" id="mushroom">
+                        <li>Mushroom</li>
+                    </div>
+                    <div class="nameholder" id="cheese">
+                        <li>Cheese</li>
+                    </div>
                 </ol>
             </div>
-            <div class="col-11 centerbody">
-                <div class="card pholder">
-                   
-                    <div class="imageholder"></div>
-                    <span>Prize:</span>
-                    <span>Crust:</span>
-                    <span>Size:</span>
-                    <span>Topping</span>
-                    <div class="btn btn-primary btn-w">
-                        prize
-                    </div>
-                </div>
-                <div class="card pholder">
-                    <div class="imageholder"></div>
-                    <span>Prize:</span>
-                    <span>Crust:</span>
-                    <span>Size:</span>
-                    <span>Topping</span>
-                    <div class="btn btn-primary btn-w">
-                        prize
-                    </div>
-                </div>
-                <div class="card pholder">
-
-                    <div class="imageholder"></div>
-                    <span>Prize:</span>
-                    <span>Crust:</span>
-                    <span>Size:</span>
-                    <span>Topping</span>
-                    <div class="btn btn-primary btn-w">
-                        prize
-                    </div>
-                </div>
-                <div class="card pholder">
-                    <div class="imageholder"></div>
-                    <span>Prize:</span>
-                    <span>Crust:</span>
-                    <span>Size:</span>
-                    <span>Topping</span>
-                    <div class="btn btn-primary btn-w">
-                        prize
-                    </div>
-                </div>
-                <div class="card pholder">
-                    <div class="imageholder"></div>
-                    <span>Prize:</span>
-                    <span>Crust:</span>
-                    <span>Size:</span>
-                    <span>Topping</span>
-                    <div class="btn btn-primary btn-w">
-                        prize
-                    </div>
-                </div>
-                <div class="card pholder">
-                    <div class="imageholder"></div>
-                    <span>Prize:</span>
-                    <span>Crust:</span>
-                    <span>Size:</span>
-                    <span>Topping</span>
-                    <div class="btn btn-primary btn-w">
-                        prize
-                    </div>
-                </div>
-                <div class="card pholder">
-                    <div class="imageholder"></div>
-                    <span>Prize:</span>
-                    <span>Crust:</span>
-                    <span>Size:</span>
-                    <span>Topping</span>
-                    <div class="btn btn-primary btn-w">
-                        prize
-                    </div>
-                </div>
-                <div class="card pholder">
-                    <div class="imageholder"></div>
-                    <span>Prize:</span>
-                    <span>Crust:</span>
-                    <span>Size:</span>
-                    <span>Topping</span>
-                    <div class="btn btn-primary btn-w">
-                        prize
-                    </div>
-                </div>
-                <div class="card pholder">
-                    <div class="imageholder"></div>
-                    <span>Prize:</span>
-                    <span>Crust:</span>
-                    <span>Size:</span>
-                    <span>Topping</span>
-                    <div class="btn btn-primary btn-w">
-                        prize
-                    </div>
-                </div>
-                <div class="card pholder">
-                    <div class="imageholder"></div>
-                    <span>Prize:</span>
-                    <span>Crust:</span>
-                    <span>Size:</span>
-                    <span>Topping</span>
-
-                    <div class="btn btn-primary btn-w">
-                        prize
-                    </div>
-                </div>
+            <div class="col-11 centerbody" id="itemholder">
+                
 
             </div>
         </div>
