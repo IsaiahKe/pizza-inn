@@ -51,6 +51,25 @@ select{
 .submit{
     float:right;margin-right: 20px;margin-bottom: 20px ;cursor:pointer;
 }
-/* .result{
-    height:60px;width:300px;background-color: aliceblue;
-} */
+#cart{
+    background-color: red !important;color:white !important;border-radius:60% !important ;
+}
+.checkout{
+    height:700px !important;max-width: 900px !important;display:none; border:2px solid black !important;z-index: 10 !important;overflow-y: auto !important;min-width: fit-content !important;min-height: fit-content !important; margin: 0px auto !important;position:absolute;
+}
+.orderholder{
+    width:100% !important;height:100px !important;background-color: #ffdead !important;
+}
+.orderRemove{
+    height:30px !important;width:40px !important
+}
+.cbody{
+    overflow-y: auto !important;padding:5px !important;
+}
+
+.sum{
+    height:100px !important;display: flex;align-items: flex-start !important;justify-content: space-between;flex-direction: column !important;font-weight: bold;
+}
+table{
+    width:100%; text-align: right;
+}
