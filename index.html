@@ -31,14 +31,16 @@
             </div>
             <div class="col-8 alignend">
                 <ol>
-                   <li> <div class="btn">
-                         <input type="text"placeholder="Item search">
-                    </div></li>
-                    <li><div class="btn nameholder cart" id="cart">
-                    </div></li>
-                   <li> <div class="btn btn-primary">
-                        Offers
-                    </div></li>
+                    <li>
+                        <div class="btn">
+                            <input type="text" placeholder="Item search">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btn nameholder cart" id="cart">
+                        </div>
+                    </li>
+
                 </ol>
             </div>
         </div>
@@ -47,48 +49,70 @@
 
 <body>
     <div class="container-fluid">
+        <div class="card checkout">
+            <div class="row card-header ccontent">
+                <div class="col-11">
+                    <h2>Order Details</h2>
+                </div>
+                <div class="col-1 btn btn-danger" id="cancel">X</div>
+            </div>
+            <div class="card-body cbody"></div>
+            <div class="card-footer sum">
+                <div class="container-fluid">
+                  <table>
+                      <tr><td>No. of Pizza</td><td></td></td><td id="count"></td></tr>
+                      <tr><td>Delivery fee</td><td id="place"></td><td id="fee"></td></tr>
+                      <tr><td>Total cost</td><td></td><td id="total"></td></tr>
+                  </table>
+                </div>
 
-        <div class=" card orderCard">
-            <div class="card-header ccontent"><h4>Customised Pizza</h4></div>
-            <form id="order">
-                <p>Select Size:</p><p>
-            <select  id="size">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-        </select></p>
-        <p>Select Top</p>
-        <p>
-            <select id="top">
-                <option value="">Pepperoni</option>
-                <option value="">Mushroom</option>
-                <option value="">Cheese</option>
-            </select>
-        </p>
-        <p>Select Crust</p>
-        <p>
-        <select id="crust">
-            <option value="">Cripsy</option>
-            <option value="">Stuff</option>
-            <option value="">Flatbread</option>
-        </select>
-        </p>
-        <p>Select Address</p>
-        <p>
-            <select name="" id="">
-                <option value="">None</option>
-                <option value="">CBD</option>
-                <option value="">Yaya</option>
-                <option value="">Muthaiga</option>
-                <option value="">Westalands</option>
-                <option value="">Ngong</option>
-            </select>
-        </p>
-        <p><input type="submit" class="btn btn-primary submit" value="Order"></p>
-            </form>
-    
+            </div>
         </div>
-        <!-- <div class="result"></div> -->
+        <div class=" card orderCard">
+
+            <div class="card-header ccontent">
+                <h4 id="test"> Customised Pizza</h4>
+            </div>
+            <form id="order">
+                <p>Select Size:</p>
+                <p>
+                    <select id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </p>
+                <p>Select Top</p>
+                <p>
+                    <select id="top">
+                        <option value="pepperoni">Pepperoni</option>
+                        <option value="mushroom">Mushroom</option>
+                        <option value="cheese">Cheese</option>
+                    </select>
+                </p>
+                <p>Select Crust</p>
+                <p>
+                    <select id="crust">
+                        <option value="cripsy">Cripsy</option>
+                        <option value="stuffed">Stuff</option>
+                        <option value="flatbread">Flatbread</option>
+                    </select>
+                </p>
+                <p>Select Address</p>
+                <p>
+                    <select id="location">
+                        <option value="0">None</option>
+                        <option value="50">CBD</option>
+                        <option value="100">Yaya</option>
+                        <option value="200">Muthaiga</option>
+                        <option value="400">Westalands</option>
+                        <option value="200">Ngong</option>
+                    </select>
+                </p>
+                <p><input type="submit" class="btn btn-primary submit" value="Order"></p>
+            </form>
+
+        </div>
     </div>
 </body>
 
