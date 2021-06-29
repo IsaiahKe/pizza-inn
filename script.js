@@ -46,18 +46,30 @@ $(document).ready(
                 var crust=$("#crust").val();
                 var size=$("#size").val();
                 var location=$("#location").val();
+                
                  
                 addOrder(top,crust,size);
                $("#cart").text(order.length);
                $("#count").text(order.length);
-               $("#fee").text(location);
-               $("#").text();
+               $("#fee").text(location);               
                $(".cbody").text('');
                showOrder();
-                 
-               getDeliveryPrice(location);
-               getTotal(order,location); 
+               getTotal(order,location);
+               if(location==0){$("#place").text("None");}
+               else if(location==50){$("#place").text("CBD");$("#fee").text(location);}
+               else if(location==100){$("#place").text("Yaya");}
+               else if(location==200){$("#place").text("Muthaiga");}
+               else if(location==400){$("#place").text("Westlands");}
+               else if(location==200){$("#place").text("Ngong");}  
+               getDeliveryPrice();    
         });
+        function getTotal(ar,del){
+            var total=0;
+            for(let i=0;i<ar.length;i++){
+                total=total+parseInt(ar[i].pizzaPrice);
+            }
+            return $("#total").text(parseInt(del)+total);
+        }
         function addOrder(top,crust,size){
             for(let i=0;i<allPizza.length;i++){
                 if(allPizza[i].pizzaSize==size && allPizza[i].pizzaCrust==crust && allPizza[i].pizzaTop==top){
@@ -67,21 +79,7 @@ $(document).ready(
             }
         }
         function getDeliveryPrice(price){
-            if(location==0){return $("#place").text("None");}
-               else if(price==50){return $("#place").text('CBD');}
-               else if(price==100){return $("#place").text("Yaya");}
-               else if(price==200){return $("#place").text("Muthaiga");}
-               else if(price==400){return $("#place").text("Westlands");}
-               else{return $("#place").text("Ngong");}
-        }
-        function getTotal(ar,delivery){
-            var del=parseInt(delivery);
-            var sum=0;
-            ar.forEach(e=>sum+parseInt(e.pizzaPrice),
-            total=sum+del)
-            
-            return $("#total").text(sum+del);
-
+            $("")
         }
         $("#cart").text(order.length);
         $(".checkout").hide();
@@ -98,8 +96,8 @@ $(document).ready(
     function showOrder(){
         if(order.length>0){
             for(let i=0;i<order.length;i++){
-                var me=parseInt(order[i].pizzaPrice);
-               $(".cbody").append('<div class="card mb-2 orderholder"><div class="row card-body"><div class="col-11">'+order[i].pizzaCrust +' ' +order[i].pizzaPrice +'<br/></div><div class="col-1 orderRemove btn-danger">X</div></div></div>'); 
+               // var me=parseInt(order[i].pizzaPrice);
+               $(".cbody").append('<div class="card mb-2 orderholder"><div class="row card-body"><div class="col-11"><div class="row"><div class="col-3">'+order[i].pizzaSize+'</div><div class="col-3">'+order[i].pizzaCrust +'</div><div class="col-2">' +order[i].pizzaPrice +'</div><div class="col-3">'+order[i].pizzaTop+'</div><div class="col-1 orderRemove btn-danger">X</div></div></div></div>'); 
             }
         }
     }
