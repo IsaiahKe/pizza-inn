@@ -49,31 +49,31 @@
     <div class="container-fluid">
 
         <div class=" card orderCard">
-            <div class="card-head">Customize Your Pizza order</div>
-            <form onsubmit="">
+            <div class="card-header ccontent"><h4>Customised Pizza</h4></div>
+            <form id="order">
                 <p>Select Size:</p><p>
-            <select name="" id="">
+            <select  id="size">
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
         </select></p>
         <p>Select Top</p>
         <p>
-            <select name="" id="">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+            <select id="top">
+                <option value="">Pepperoni</option>
+                <option value="">Mushroom</option>
+                <option value="">Cheese</option>
             </select>
         </p>
         <p>Select Crust</p>
         <p>
-        <select name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+        <select id="crust">
+            <option value="">Cripsy</option>
+            <option value="">Stuff</option>
+            <option value="">Flatbread</option>
         </select>
         </p>
-        <p><Address></Address></p>
+        <p>Select Address</p>
         <p>
             <select name="" id="">
                 <option value="">None</option>
@@ -84,10 +84,11 @@
                 <option value="">Ngong</option>
             </select>
         </p>
-        <p><input type="submit" value="Order"></p>
+        <p><input type="submit" class="btn btn-primary submit" value="Order"></p>
             </form>
     
         </div>
+        <!-- <div class="result"></div> -->
     </div>
 </body>
 
