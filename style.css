@@ -5,14 +5,14 @@ body{
     width:100% !important;
 }
 .nav{
-    height:200px !important;width: 100% !important;background-color: aliceblue !important;
+    min-height:190px;height:auto !important;width: 100% !important;background-color: aliceblue !important;
 }
 
 .sidenav{
  background-color: aliceblue !important; min-width: fit-content !important;
 }
 .pholder{
-    height:350px !important;min-width:300px !important;background-color: #f0f0f0 !important; box-shadow: aliceblue; margin: 15px 10px auto;max-width:23% !important;/* margin-top: 10px !important;margin-bottom: 10px !important;*/
+    height:350px !important;min-width:300px !important;background-color: #f0f0f0 !important; box-shadow: aliceblue; margin: 15px 20px auto;max-width:23% !important;/* margin-top: 10px !important;margin-bottom: 10px !important;*/
 }
 hr{
     margin:0px !important; width: 100% !important;
@@ -20,26 +20,11 @@ hr{
 .centerpos{
     text-align: center;border: 2px solid red !important;border-radius: 50%;width:160px;height:160px;background-image: url("logo.png");background-repeat: none;background-size:cover; margin: 0px auto;
 }
-.centerbody{
-    display: flex;justify-content: space-between !important;align-items: flex-start !important;flex-grow: initial;flex-direction: row;flex-wrap: wrap;
-}
-.sidenav ol{
-    list-style-type: none;
-}
-.sidenav ol li{
-    margin-top: 10px !important;
-}
-.imageholder{
-    width:70%;height:200px;background-color: aliceblue; margin: 0px auto;
-}
-.btn-w{
-width:40% !important; text-align: center !important;margin:0px auto !important;
-}
 .min-width{
     min-width: fit-content !important;
 }
 .alignend{
-    display: flex;align-items: flex-end;justify-content: flex-end;flex-direction: row;padding-right:40px;min-width:60% !important;}
+    display: flex;align-items: center;justify-content: flex-end;flex-direction: row;padding-right:40px;width:100% !important;}
 .nav ol{
     list-style-type: none; float: left;
 }
@@ -49,4 +34,23 @@ width:40% !important; text-align: center !important;margin:0px auto !important;
 .nameholder{
     height:40px;width:80%;background-color: transparent; cursor: pointer; line-height: 40px; padding-left:10px;
 }
+
 input[type="text"]{height:40px;width:80%;border-radius:25px;outline: none; padding-left: 10px;}
+.orderCard{
+   min-height:400px !important;max-width:800px !important;margin: 0px auto; margin-top:10px;
+}
+.orderCard p{
+    padding-left: 20px !important;
+}
+.ccontent{
+    text-align: center !important;background-color: aliceblue !important;min-height:60px !important;
+}
+select{
+    width:70%;height:40px;
+}
+.submit{
+    float:right;margin-right: 20px;margin-bottom: 20px ;cursor:pointer;
+}
+/* .result{
+    height:60px;width:300px;background-color: aliceblue;
+} */
